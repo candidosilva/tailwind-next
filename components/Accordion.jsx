@@ -47,8 +47,8 @@ export default function Accordion({ items }) {
                 "flex w-full items-center justify-between border border-gray-200 bg-white p-5 text-left font-medium text-gray-500 hover:bg-gray-100",
                 {
                   "rounded-t-xl": idx === 0,
+                  "bg-gray-200": item.open,
                   "border-b-0": questionBorder(idx, item, list),
-                  "bg-gray-100": item.open,
                 }
               )}
             >
