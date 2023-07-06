@@ -1,3 +1,4 @@
+import "tailwindcss/tailwind.css";
 import Avatar from "@/components/Avatar";
 import image from "../assets/images/woman.jpg";
 

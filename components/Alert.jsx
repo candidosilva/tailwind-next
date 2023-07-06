@@ -2,7 +2,6 @@
 import classname from "classname";
 import { CheckCircle2, AlertCircle, InfoIcon, X, XCircle } from "lucide-react";
 import { useState } from "react";
-import { useImmer } from "use-immer";
 
 const bgColorTypes = {
   undefined: "bg-gray-100",
@@ -54,7 +53,7 @@ export default function Alert({ type, text, closable }) {
 
   return (
     <div
-      class={`flex rounded-lg p-4 ${bgColorTypes[type]} ${textColor[type]} ${close}`}
+      className={`flex rounded-lg p-4 ${bgColorTypes[type]} ${textColor[type]} ${close}`}
     >
       {iconComponent[type]}
 
@@ -64,7 +63,7 @@ export default function Alert({ type, text, closable }) {
         <button
           onClick={() => closeAlert()}
           type="button"
-          class={classname(
+          className={classname(
             "-mx-1.5 -my-1.5 ml-auto inline-flex h-8 w-8 rounded-lg p-1.5",
             {}
           )}

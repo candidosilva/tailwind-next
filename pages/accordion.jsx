@@ -1,3 +1,4 @@
+import "tailwindcss/tailwind.css";
 import Accordion from "@/components/Accordion";
 
 const items = [
@@ -15,7 +16,7 @@ const items = [
   },
 ];
 
-export default function Accordion() {
+export default function AccordionPage() {
   return (
     <div className="m-4">
       <Accordion items={items} />
