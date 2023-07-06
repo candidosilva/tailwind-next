@@ -1,24 +1,15 @@
-import Accordion from "@/components/Accordion";
+import Alert from "@/components/Alert";
 
-const items = [
-  {
-    title: "Question about something 1",
-    text: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
-  },
-  {
-    title: "Question about something 2",
-    text: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
-  },
-  {
-    title: "Question about something 3",
-    text: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
-  },
-];
+const alert = "Some text information.";
 
 export default function Home() {
   return (
-    <div className="m-4">
-      <Accordion items={items} />
+    <div className="m-4 flex flex-col gap-4">
+      <Alert type="success" text={alert} closable />
+      <Alert type="info" text={alert} />
+      <Alert type="error" text={alert} />
+      <Alert type="warning" text={alert} closable />
+      <Alert text={alert} closable />
     </div>
   );
 }
